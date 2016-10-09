@@ -1,5 +1,5 @@
 ## Matrix inversion can be a costly computation and there may be some benefit to
-## caching the inverse of the matrix rather than compute it repeatedly.  The 
+## caching the inverse of the matrix rather than compute it repeatedly. The 
 ## following pair of functions cache the inverse of a matrix.  
 
 ## The makeCacheMatrix function creates a special matrix object that can cache 
@@ -29,7 +29,7 @@ cacheSolve <- function(x, ...) {
     InvMatrix <- x$getInverse()
     
     if(!is.null(InvMatrix)) {
-        messge("getting cached data")
+        message("getting cached data")
         return(InvMatrix)
     }
     imatrix <-x$get()
